@@ -168,6 +168,6 @@ export const basketballTips = {
 };
 
 
-export const getRandomItem = (array) => {
+export const getRandomItem = <T>(array: T[]): T => {
     return array[Math.floor(Math.random() * array.length)];
 };
